@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*-------------------- main -----------------------*/
+.main {
+  background-color: #f6f8f9;
+}
+/*-------------------- top -----------------------*/
+/*fixedでブロックがなくなるのではじめの要素のトップに余白を持たせる*/
+#area-top {
+  padding-top: 48px;
+}
+
+.section-top__image {
+  height: 100vh;
+  max-height: 700px;
+  background-image: url("../images/top/top_image.jpg");
+  background-position: top;
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  /* padding-top: 48px; */
+  /*スペース注意*/
+}
+.section-top__image-message h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-top: 124px;
+  color: #00CEFF;
+}
+.section-top__image-message img {
+  max-width: 320px;
+  position: relative;
+  top: 160px;
+}
+@media (min-width: 960px) {
+  .section-top__image-message img {
+    max-width: 630px;
+    top: 160px;
+  }
+}
+/*-------------------- contents -----------------------*/
+.section-content__all {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #fafafa;
+  /* background-color: #222; */
+}
+.section-content__all p {
+  font-size: 1.7rem;
+  color: #3288FF;
+  font-weight: 600;
+  padding-top: 40px;
+}
+.section-content__size-3 h2 {
+  font-size: 2.2rem;
+}
+.section-content__3 span {
+  font-size: 1.7rem;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  bottom: 20px;
+}
+.section-content__1,
+.section-content__5,
+.section-content__7,
+.section-content__10,
+.section-content__11 {
+  z-index: 555;
+}
+.walk, .ball, .sun, .gia, .cube {
+  z-index: 1;
+}
+.walk img {
+  position: relative;
+  width: 60px;
+  top: 100px;
+}
+.sun img {
+  max-width: 280px;
+}
+.gia img {
+  max-width: 340px;
+}
+.cube img {
+  max-width: 280px;
+}
+
+.section-content__1,
+.section-content__2,
+.section-content__3,
+.section-content__4,
+.section-content__5,
+.section-content__6,
+.section-content__7,
+.section-content__8,
+.section-content__9,
+.section-content__10,
+.section-content__11,
+.walk, .ball, .sun, .gia, .cube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-content__size-1,
+.section-content__size-2, 
+.section-content__size-3,
+.section-content__size-4,
+.section-content__size-5,
+.section-content__size-6,
+.section-content__size-7,
+.section-content__size-8,
+.section-content__size-9,
+.section-content__size-10,
+.section-content__size-11 {
+  position: relative;
+  height: 585px;
+  margin: 15px;
+  border-radius: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.section-content__size-2,
+.section-content__size-4,
+.section-content__size-8,
+.section-content__size-9,
+.section-content__size-10 {
+  background-color: #fff;
+  color: #222;
+}
+
+.section-content__size-1 h2,
+.section-content__size-2 h2, 
+.section-content__size-3 h2,
+.section-content__size-4 h2,
+.section-content__size-5 h2,
+.section-content__size-6 h2,
+.section-content__size-7 h2,
+.section-content__size-8 h2,
+.section-content__size-9 h2,
+.section-content__size-10 h2,
+.section-content__size-11 h2 {
+  font-size: 6.0rem;
+}
+.section-content__3 h2,
+.section-content__8 h2,
+.section-content__9 h2 {
+  font-size: 4.6rem;
+}
+
+  /* コピー */
+.copy-2 img {
+  max-width: 280px;
+  position: relative;
+  right: 5%;
+  top: 20%;
+  transform: translate(5%, 30%);
+}
+.copy-5 img {
+  max-width: 320px;
+  position: relative;
+  right: 5%;
+  top: 20%;
+  transform: translate(0%, 25%);
+}
+.copy-9 img {
+  max-width: 290px;
+  position: relative;
+  right: 5%;
+  top: 20%;
+  transform: translate(5%, 25%);
+}
+.copy-1 img,
+.copy-3 img,
+.copy-4 img,
+.copy-6 img,
+.copy-7 img,
+.copy-8 img,
+.copy-10 img,
+.copy-11 img,
+.copy-12 img {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .section-content__all {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .section-content__box {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  .section-content__size-1,
+  .section-content__size-2, 
+  .section-content__size-3 {
+    margin: 0 auto;
+    margin-top: 15px;
+    /* max-width: 970px; */
+    max-width: 1400px;
+  }
+  .section-content__size-4,
+  .section-content__size-5,
+  .section-content__size-6,
+  .section-content__size-7,
+  .section-content__size-8,
+  .section-content__size-9,
+  .section-content__size-10,
+  .section-content__size-11 {
+    margin: 0 9px;
+    margin-top: 15px;
+    /* min-width: 680px; */
+    min-width: 470px;
+    /* min-width: 500px; */
+    max-width: 680px;
+  }
+
+  .sun img {
+    max-width: 360px;
+  }
+  .gia img {
+    max-width: 470px;
+  }
+
+  /* コピー */
+.copy-1 img,
+.copy-2 img,
+.copy-3 img,
+.copy-4 img,
+.copy-5 img,
+.copy-6 img,
+.copy-7 img,
+.copy-8 img,
+.copy-9 img,
+.copy-10 img,
+.copy-11 img,
+.copy-12 img {
+  display: block;
+  position: absolute;
+}
+
+  .copy-1 img {
+    max-width: 480px;
+    left: 10%;
+    top: 10%;
+    transform: translate(-20%, -20%);
+  }
+  .copy-2 img {
+    max-width: 400px;
+    right: 10%;
+    top: 10%;
+    transform: translate(10%, -10%);
+  }
+  .copy-3 img {
+    max-width: 440px;
+    left: 10%;
+    bottom: 10%;
+    transform: translate(-20%, 10%);
+  }
+  .copy-4 img {
+    max-width: 480px;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(10%, 20%);
+  }
+  .copy-5 img {
+    max-width: 500px;
+    left: 10%;
+    top: 10%;
+    transform: translate(-20%, -25%);
+  }
+  .copy-6 img {
+    max-width: 480px;
+    right: 10%;
+    top: 10%;
+    transform: translate(10%, -25%);
+  }
+  .copy-7 img {
+    max-width: 520px;
+    left: 10%;
+    bottom: 10%;
+    transform: translate(-20%, 10%);
+  }
+  .copy-8 img {
+    max-width: 520px;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(10%, 20%);
+  }
+  .copy-9 img {
+    max-width: 500px;
+    left: 10%;
+    top: 10%;
+    transform: translate(-20%, -25%);
+  }
+  .copy-10 img {
+    max-width: 480px;
+    right: 10%;
+    top: 10%;
+    transform: translate(10%, -25%);
+  }
+  .copy-11 img {
+    max-width: 520px;
+    left: 10%;
+    bottom: 10%;
+    transform: translate(-20%, 10%);
+  }
+  .copy-12 img {
+    max-width: 520px;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(10%, 20%);
+  }
+
+
+}
